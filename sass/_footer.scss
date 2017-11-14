@@ -1,0 +1,43 @@
+footer {
+    background: $bleu;
+    color: $blanc;
+    box-shadow: 0 -2px 5px $gris;
+    .copyright {
+        background: $vert;
+        color: $blanc;
+        p {
+            text-align: center;
+            a {
+                color: $bleu;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        padding-top: 50px;
+        .container {
+            overflow: hidden;
+            section {
+                float: left;
+                width: 33.333333%;
+            }
+            section:first-child {
+                padding-right: 25px;
+            }
+            section:nth-child(2) {
+                padding: 0 25px;
+            }
+            section:last-child {
+                padding-left: 25px;
+            }
+        }
+        .copyright {
+            margin-top: 25px;
+            p {
+                line-height: 50px;
+            }
+        }
+    }
+}

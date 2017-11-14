@@ -1,0 +1,226 @@
+/* line 4, ../sass/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/_reset.scss */
+body {
+  font: 16px 'Open Sans', sans-serif;
+  background: #fafafa;
+  color: #0A1829;
+}
+
+/* line 16, ../sass/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 20, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+/* line 26, ../sass/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 1, ../sass/_commun.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* line 5, ../sass/_commun.scss */
+h2 {
+  color: #588E95;
+  text-align: left;
+}
+
+/* line 10, ../sass/_commun.scss */
+h3 {
+  font-weight: bold;
+}
+
+/* line 14, ../sass/_commun.scss */
+hr {
+  border: none;
+  height: 2px;
+  width: 100px;
+  background: #588E95;
+  margin: 25px 0;
+}
+
+/* line 22, ../sass/_commun.scss */
+time {
+  color: #588E95;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 28, ../sass/_commun.scss */
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  /* line 32, ../sass/_commun.scss */
+  .about, .formation, .exp {
+    padding: 80px 0;
+  }
+
+  /* line 35, ../sass/_commun.scss */
+  article {
+    margin: 20px 0;
+  }
+}
+/* line 1, ../sass/_header.scss */
+header {
+  /*
+  background-image: url(../img/ciel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  background: #0A1829;
+  color: #fafafa;
+  box-shadow: 0 2px 5px #555;
+}
+/* line 10, ../sass/_header.scss */
+header h1, header p, header cite {
+  text-align: center;
+}
+/* line 13, ../sass/_header.scss */
+header p {
+  color: #588E95;
+}
+/* line 16, ../sass/_header.scss */
+header img {
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+}
+/* line 21, ../sass/_header.scss */
+header cite {
+  display: block;
+}
+/* line 24, ../sass/_header.scss */
+header nav {
+  background: #588E95;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 30, ../sass/_header.scss */
+  header {
+    padding-top: 50px;
+  }
+  /* line 32, ../sass/_header.scss */
+  header h1 {
+    font-size: 55px;
+    letter-spacing: 5px;
+  }
+  /* line 36, ../sass/_header.scss */
+  header p {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  /* line 40, ../sass/_header.scss */
+  header img {
+    margin: 50px auto;
+  }
+  /* line 43, ../sass/_header.scss */
+  header cite {
+    margin: 30px;
+    font-size: 20px;
+  }
+  /* line 46, ../sass/_header.scss */
+  header cite span {
+    font-size: 30px;
+    color: #588E95;
+  }
+  /* line 52, ../sass/_header.scss */
+  header nav ul {
+    text-align: center;
+  }
+  /* line 54, ../sass/_header.scss */
+  header nav ul li {
+    display: inline-block;
+    width: 19%;
+    transition-duration: 0.5s;
+  }
+  /* line 58, ../sass/_header.scss */
+  header nav ul li a {
+    line-height: 40px;
+  }
+  /* line 62, ../sass/_header.scss */
+  header nav ul li:hover {
+    background: #fafafa;
+    color: #0A1829;
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 3, ../sass/_about.scss */
+  .about p {
+    margin: 20px 0;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+footer {
+  background: #0A1829;
+  color: #fafafa;
+  box-shadow: 0 -2px 5px #555;
+}
+/* line 5, ../sass/_footer.scss */
+footer .copyright {
+  background: #588E95;
+  color: #fafafa;
+}
+/* line 8, ../sass/_footer.scss */
+footer .copyright p {
+  text-align: center;
+}
+/* line 10, ../sass/_footer.scss */
+footer .copyright p a {
+  color: #0A1829;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 18, ../sass/_footer.scss */
+  footer {
+    padding-top: 50px;
+  }
+  /* line 20, ../sass/_footer.scss */
+  footer .container {
+    overflow: hidden;
+  }
+  /* line 22, ../sass/_footer.scss */
+  footer .container section {
+    float: left;
+    width: 33.333333%;
+  }
+  /* line 26, ../sass/_footer.scss */
+  footer .container section:first-child {
+    padding-right: 25px;
+  }
+  /* line 29, ../sass/_footer.scss */
+  footer .container section:nth-child(2) {
+    padding: 0 25px;
+  }
+  /* line 32, ../sass/_footer.scss */
+  footer .container section:last-child {
+    padding-left: 25px;
+  }
+  /* line 36, ../sass/_footer.scss */
+  footer .copyright {
+    margin-top: 25px;
+  }
+  /* line 38, ../sass/_footer.scss */
+  footer .copyright p {
+    line-height: 50px;
+  }
+}

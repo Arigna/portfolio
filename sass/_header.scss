@@ -1,0 +1,70 @@
+header {
+    /*
+    background-image: url(../img/ciel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    background: $bleu;
+    color: $blanc;
+    box-shadow: 0 2px 5px $gris;
+    h1, p, cite {
+        text-align: center;
+    }
+    p {
+        color: $vert;
+    }
+    img {
+        display: block;
+        text-align: center;
+        border-radius: 50%;
+    }
+    cite {
+        display: block;
+    }
+    nav {
+        background: $vert;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        padding-top: 50px;
+        h1 {
+            font-size: 55px;
+            letter-spacing: 5px;
+        }
+        p {
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+        img {
+            margin: 50px auto;
+        }
+        cite {
+            margin: 30px;
+            font-size: 20px;
+            span {
+                font-size: 30px;
+                color: $vert;
+            }
+        }
+        nav {
+            ul {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    width: 19%;
+                    transition-duration: 0.5s;
+                    a {
+                        line-height: 40px;
+                    }
+                }
+                li:hover {
+                    background: $blanc;
+                    color: $bleu;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
