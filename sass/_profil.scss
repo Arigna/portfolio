@@ -28,3 +28,49 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1169px) {
+    .profil {
+        text-align: center;
+        .inner-profil {
+            overflow: hidden;
+            article {
+                float: left;
+                width: 33.333333%;
+                h3 {
+                    margin: 15px 0;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .btn {
+            margin-top: 10px;
+        }
+        .btn:hover {
+            @include box-shadow(0 0 8px $gris inset);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .profil {
+        text-align: center;
+        .inner-profil {
+            overflow: hidden;
+            article {
+                float: left;
+                width: 33.333333%;
+                h3 {
+                    margin: 10px 0;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .btn {
+            margin-top: 10px;
+        }
+        .btn:hover {
+            @include box-shadow(0 0 8px $gris inset);
+        }
+    }
+}

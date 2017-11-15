@@ -88,3 +88,43 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1169px) {
+    footer {
+        padding-top: 50px;
+        .container {
+            overflow: hidden;
+            section {
+                float: left;
+                width: 33.333333%;
+                padding: 0 20px;
+            }
+        }
+        .copyright {
+            margin-top: 25px;
+            p {
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer {
+        padding-top: 50px;
+        .container {
+            overflow: hidden;
+            section {
+                float: left;
+                width: 33.333333%;
+                padding: 0 20px;
+            }
+        }
+        .copyright {
+            margin-top: 25px;
+            p {
+                line-height: 40px;
+            }
+        }
+    }
+}

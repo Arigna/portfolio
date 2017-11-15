@@ -74,3 +74,91 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1169px) {
+    header {
+        padding-top: 40px;
+        h1 {
+            font-size: 55px;
+            letter-spacing: 5px;
+        }
+        p {
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+        img {
+            margin: 50px auto;
+        }
+        cite {
+            margin: 30px;
+            font-size: 20px;
+            span {
+                font-size: 30px;
+                color: $vert;
+            }
+        }
+        nav {
+            ul {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    width: 19%;
+                    cursor: pointer;
+                    transition-duration: 0.5s;
+                    a {
+                        line-height: 40px;
+                    }
+                }
+                li:hover {
+                    background: $blanc;
+                    color: $bleu;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        padding-top: 30px;
+        h1 {
+            font-size: 45px;
+            letter-spacing: 5px;
+        }
+        p {
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+        img {
+            margin: 50px auto;
+        }
+        cite {
+            margin: 25px;
+            font-size: 18px;
+            span {
+                font-size: 25px;
+                color: $vert;
+            }
+        }
+        nav {
+            ul {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    width: 19%;
+                    cursor: pointer;
+                    transition-duration: 0.5s;
+                    a {
+                        line-height: 40px;
+                    }
+                }
+                li:hover {
+                    background: $blanc;
+                    color: $bleu;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

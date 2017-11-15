@@ -9,3 +9,23 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1169px) {
+    .about {
+        background: url(../img/bg_prez.jpg) no-repeat top right;
+        .inner-prez {
+            width: 60%;
+        }
+        p {
+            margin: 15px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .about {
+        p {
+            margin: 15px 0;
+        }
+    }
+}

@@ -60,3 +60,69 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1169px) {
+    .techcomp {
+        .container {
+            overflow: hidden;
+            .tech {
+                float: left;
+                width: 30%;
+                padding-right: 50px;
+            }
+            .comp {
+                float: right;
+                width: 70%;
+                .inner-comp {
+                    overflow: hidden;
+                    .webdesign, .dev {
+                        width: 50%;
+                        float: left;
+                        padding-right: 25px;
+                        p {
+                            text-align: justify;
+                            margin: 5px 0;
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .projet, .divers {
+                        width: 50%;
+                        float: right;
+                        text-align: right;
+                        padding-left: 25px;
+                        p {
+                            text-align: justify;
+                            margin: 5px 0;
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .techcomp {
+        p {
+            text-align: justify;
+            margin: 5px 0;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    .tech {
+        width: 50%;
+    }
+    .comp {
+        margin-top: 50px;
+    }
+    .webdesign, .projet, .dev, .divers {
+        margin: 15px 0;
+    }
+}
