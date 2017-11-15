@@ -12,6 +12,9 @@ header {
     h1, p, cite {
         text-align: center;
     }
+    h1 {
+        cursor: pointer;
+    }
     p {
         color: $vert;
     }

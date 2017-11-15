@@ -111,68 +111,72 @@ header h1, header p, header cite {
   text-align: center;
 }
 /* line 15, ../sass/_header.scss */
+header h1 {
+  cursor: pointer;
+}
+/* line 18, ../sass/_header.scss */
 header p {
   color: #588E95;
 }
-/* line 18, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 header img {
   display: block;
   text-align: center;
   border-radius: 50%;
 }
-/* line 23, ../sass/_header.scss */
+/* line 26, ../sass/_header.scss */
 header cite {
   display: block;
 }
-/* line 26, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 header nav {
   background: #588E95;
 }
 
 @media screen and (min-width: 1170px) {
-  /* line 32, ../sass/_header.scss */
+  /* line 35, ../sass/_header.scss */
   header {
     padding-top: 50px;
   }
-  /* line 34, ../sass/_header.scss */
+  /* line 37, ../sass/_header.scss */
   header h1 {
     font-size: 55px;
     letter-spacing: 5px;
   }
-  /* line 38, ../sass/_header.scss */
+  /* line 41, ../sass/_header.scss */
   header p {
     font-size: 30px;
     letter-spacing: 3px;
   }
-  /* line 42, ../sass/_header.scss */
+  /* line 45, ../sass/_header.scss */
   header img {
     margin: 50px auto;
   }
-  /* line 45, ../sass/_header.scss */
+  /* line 48, ../sass/_header.scss */
   header cite {
     margin: 30px;
     font-size: 20px;
   }
-  /* line 48, ../sass/_header.scss */
+  /* line 51, ../sass/_header.scss */
   header cite span {
     font-size: 30px;
     color: #588E95;
   }
-  /* line 54, ../sass/_header.scss */
+  /* line 57, ../sass/_header.scss */
   header nav ul {
     text-align: center;
   }
-  /* line 56, ../sass/_header.scss */
+  /* line 59, ../sass/_header.scss */
   header nav ul li {
     display: inline-block;
     width: 19%;
     transition-duration: 0.5s;
   }
-  /* line 60, ../sass/_header.scss */
+  /* line 63, ../sass/_header.scss */
   header nav ul li a {
     line-height: 40px;
   }
-  /* line 64, ../sass/_header.scss */
+  /* line 67, ../sass/_header.scss */
   header nav ul li:hover {
     background: #fafafa;
     color: #0A1829;
