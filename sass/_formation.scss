@@ -1,0 +1,15 @@
+@media screen and (min-width: 1170px) {
+    .formation {
+        background: url(../img/bg_formations.jpg) no-repeat left;
+        text-align: right;
+        h2 {
+            text-align: right;
+        }
+        hr {
+            float: right;
+        }
+        article {
+            clear: both;
+        }
+    }
+}
