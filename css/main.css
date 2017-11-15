@@ -362,7 +362,7 @@ footer section .tel::before, footer section .mail::before {
   font-family: 'FontAwesome';
   color: #588E95;
   margin-right: 10px;
-  font-size: 30px;
+  font-size: 20px;
   vertical-align: middle;
 }
 /* line 29, ../sass/_footer.scss */
@@ -373,40 +373,68 @@ footer section .tel::before {
 footer section .mail::before {
   content: '\f0e0';
 }
-/* line 36, ../sass/_footer.scss */
+/* line 37, ../sass/_footer.scss */
+footer .assets a::before {
+  font-family: 'FontAwesome';
+  color: #588E95;
+  font-size: 35px;
+  margin: 10px 5px;
+  transition-duration: 0.5s;
+}
+/* line 44, ../sass/_footer.scss */
+footer .assets a:hover::before {
+  color: #fafafa;
+}
+/* line 47, ../sass/_footer.scss */
+footer .assets a[title="Linkedin"]::before {
+  content: '\f08c';
+}
+/* line 50, ../sass/_footer.scss */
+footer .assets a[title="Viadeo"]::before {
+  content: '\f2aa';
+}
+/* line 53, ../sass/_footer.scss */
+footer .assets a[title="GitHub"]::before {
+  content: '\f092';
+}
+/* line 56, ../sass/_footer.scss */
+footer .assets a[title="BitBucket"]::before {
+  content: '\f172';
+}
+/* line 60, ../sass/_footer.scss */
 footer .copyright {
   background: #588E95;
   color: #0A1829;
 }
-/* line 39, ../sass/_footer.scss */
+/* line 63, ../sass/_footer.scss */
 footer .copyright p {
   text-align: center;
 }
-/* line 41, ../sass/_footer.scss */
+/* line 65, ../sass/_footer.scss */
 footer .copyright p a {
   color: #fafafa;
 }
 
 @media screen and (min-width: 1170px) {
-  /* line 49, ../sass/_footer.scss */
+  /* line 73, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 51, ../sass/_footer.scss */
+  /* line 75, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 53, ../sass/_footer.scss */
+  /* line 77, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 25px;
   }
-  /* line 59, ../sass/_footer.scss */
+  /* line 83, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 61, ../sass/_footer.scss */
+  /* line 85, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 50px;
   }

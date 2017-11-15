@@ -23,7 +23,7 @@ footer {
             font-family: 'FontAwesome';
             color: $vert;
             margin-right: 10px;
-            font-size: 30px;
+            font-size: 20px;
             vertical-align: middle;
         }
         .tel::before {
@@ -31,6 +31,30 @@ footer {
         }
         .mail::before {
             content: '\f0e0';
+        }
+    }
+    .assets {
+        a::before {
+            font-family: 'FontAwesome';
+            color: $vert;
+            font-size: 35px;
+            margin: 10px 5px;
+            transition-duration: 0.5s;
+        }
+        a:hover::before {
+            color: $blanc;
+        }
+        a[title="Linkedin"]::before {
+            content: '\f08c';
+        }
+        a[title="Viadeo"]::before {
+            content: '\f2aa';
+        }
+        a[title="GitHub"]::before {
+            content: '\f092';
+        }
+        a[title="BitBucket"]::before {
+            content: '\f172';
         }
     }
     .copyright {
