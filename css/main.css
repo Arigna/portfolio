@@ -170,13 +170,14 @@ header nav {
   header nav ul li {
     display: inline-block;
     width: 19%;
+    cursor: pointer;
     transition-duration: 0.5s;
   }
-  /* line 63, ../sass/_header.scss */
+  /* line 64, ../sass/_header.scss */
   header nav ul li a {
     line-height: 40px;
   }
-  /* line 67, ../sass/_header.scss */
+  /* line 68, ../sass/_header.scss */
   header nav ul li:hover {
     background: #fafafa;
     color: #0A1829;

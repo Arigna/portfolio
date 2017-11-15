@@ -1,23 +1,34 @@
-document.addEventListener("DOMContentLoaded", function(){ // Fonction d'attente chargement du DOM
+$(function(){ // Fonction attente chargement du DOM
     
-    // Les variables :
-    var titleSite = document.querySelector('header h1'); // Titre du site
-    var mainLinks = document.querySelectorAll('nav a'); // Liens principaux
+    $('header h1').on('click', function(){ // Reload de la page lors du click sur h1
+        window.location.reload();
+    });
 
-
-    // Les écouteurs :
-    titleSite.addEventListener('click', reloadPage); // Capter le click sur le titre du site
-    for (var i=0; i < mainLinks.length; i++) {
-        mainLinks[i].addEventListener('click', cancelLinks); // Capter le click sur les liens principaux
-    }
-
-
-    // Les fonctions :
-    function reloadPage(){ // Fonction rechargement de la page
-        window.location.reload(true);
-    };
-    function cancelLinks(event){ // Fonction d'annulation fonctionnement naturel liens
+    $('nav a, .tel, .mail').on('click', function(event){ // Annuler comportement naturel des liens principaux
         event.preventDefault();
-    }
+    });
+
+    $('[href="#about"]').parent().on('click', function(){
+        $('html,body').animate({scrollTop: $("#about").offset().top}, 'slow');
+    });
+    $('[href="#profil"]').parent().on('click', function(){
+        $('html,body').animate({scrollTop: $("#profil").offset().top}, 'slow');
+    });
+    $('[href="#formation"]').parent().on('click', function(){
+        $('html,body').animate({scrollTop: $("#formation").offset().top}, 'slow');
+    });
+    $('[href="#techcomp"]').parent().on('click', function(){
+        $('html,body').animate({scrollTop: $("#techcomp").offset().top}, 'slow');
+    });
+    $('[href="#exp"]').parent().on('click', function(){
+        $('html,body').animate({scrollTop: $("#exp").offset().top}, 'slow');
+    });
+
+    $('.tel').on('click', function(){
+        $(this).html('<a href="tel:0638824638">(+33) 06 38 82 46 38</a>');
+    });
+    $('.mail').on('click', function(){
+        $(this).html('<a href="mailto:arigna.p@gmail.com">arigna.p@gmail.com</a>');
+    });
 
 });
