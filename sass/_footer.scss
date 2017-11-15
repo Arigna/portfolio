@@ -2,13 +2,44 @@ footer {
     background: $bleu;
     color: $blanc;
     @include box-shadow (0 -2px 5px $gris);
+    section {
+        text-align: center;
+        h2 {
+            text-align: center;
+        }
+        hr {
+            margin: 25px auto;
+        }
+        article {
+            h3 {
+                color: $vert;
+            }
+        }
+        .tel, .mail {
+            display: block;
+            margin: 10px 0;
+        }
+        .tel::before, .mail::before {
+            font-family: 'FontAwesome';
+            color: $vert;
+            margin-right: 10px;
+            font-size: 30px;
+            vertical-align: middle;
+        }
+        .tel::before {
+            content: '\f095';
+        }
+        .mail::before {
+            content: '\f0e0';
+        }
+    }
     .copyright {
         background: $vert;
-        color: $blanc;
+        color: $bleu;
         p {
             text-align: center;
             a {
-                color: $bleu;
+                color: $blanc;
             }
         }
     }
@@ -22,15 +53,7 @@ footer {
             section {
                 float: left;
                 width: 33.333333%;
-            }
-            section:first-child {
-                padding-right: 25px;
-            }
-            section:nth-child(2) {
                 padding: 0 25px;
-            }
-            section:last-child {
-                padding-left: 25px;
             }
         }
         .copyright {

@@ -1,0 +1,30 @@
+.profil {
+    .btn::before {
+        content: '\f019';
+        font-family: 'FontAwesome';
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .profil {
+        text-align: center;
+        .inner-profil {
+            overflow: hidden;
+            article {
+                float: left;
+                width: 33.333333%;
+                h3 {
+                    margin: 20px 0;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .btn {
+            margin-top: 15px;
+        }
+        .btn:hover {
+            @include box-shadow(0 0 8px $gris inset);
+        }
+    }
+}

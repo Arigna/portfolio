@@ -64,6 +64,7 @@ time {
 
 /* line 27, ../sass/_commun.scss */
 .btn {
+  display: inline-block;
   background: #588E95;
   color: #fafafa;
   padding: 8px 23px;
@@ -74,18 +75,18 @@ time {
 }
 
 @media screen and (min-width: 1170px) {
-  /* line 36, ../sass/_commun.scss */
+  /* line 37, ../sass/_commun.scss */
   .container {
     width: 1170px;
     margin: 0 auto;
   }
 
-  /* line 40, ../sass/_commun.scss */
+  /* line 41, ../sass/_commun.scss */
   .about, .profil, .formation, .techcomp, .exp {
     padding: 80px 0;
   }
 
-  /* line 43, ../sass/_commun.scss */
+  /* line 44, ../sass/_commun.scss */
   article {
     margin: 20px 0;
   }
@@ -192,6 +193,43 @@ header nav {
     margin: 20px 0;
   }
 }
+/* line 2, ../sass/_profil.scss */
+.profil .btn::before {
+  content: '\f019';
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1170px) {
+  /* line 10, ../sass/_profil.scss */
+  .profil {
+    text-align: center;
+  }
+  /* line 12, ../sass/_profil.scss */
+  .profil .inner-profil {
+    overflow: hidden;
+  }
+  /* line 14, ../sass/_profil.scss */
+  .profil .inner-profil article {
+    float: left;
+    width: 33.333333%;
+  }
+  /* line 17, ../sass/_profil.scss */
+  .profil .inner-profil article h3 {
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+  /* line 23, ../sass/_profil.scss */
+  .profil .btn {
+    margin-top: 15px;
+  }
+  /* line 26, ../sass/_profil.scss */
+  .profil .btn:hover {
+    -moz-box-shadow: 0 0 8px #555 inset;
+    -webkit-box-shadow: 0 0 8px #555 inset;
+    box-shadow: 0 0 8px #555 inset;
+  }
+}
 @media screen and (min-width: 1170px) {
   /* line 2, ../sass/_formation.scss */
   .formation {
@@ -211,20 +249,77 @@ header nav {
     clear: both;
   }
 }
+/* line 2, ../sass/_techcomp.scss */
+.tech .inner-tech {
+  margin-top: 20px;
+}
+/* line 4, ../sass/_techcomp.scss */
+.tech .inner-tech .fond-jauge {
+  width: 100%;
+  text-align: left;
+  border-radius: 10px 10px;
+  -moz-box-shadow: 0 2px 5px #555 inset;
+  -webkit-box-shadow: 0 2px 5px #555 inset;
+  box-shadow: 0 2px 5px #555 inset;
+  overflow: hidden;
+}
+/* line 10, ../sass/_techcomp.scss */
+.tech .inner-tech .fond-jauge .jauge {
+  background: #588E95;
+  height: 100%;
+  padding-left: 10px;
+}
+
 @media screen and (min-width: 1170px) {
-  /* line 3, ../sass/_techcomp.scss */
+  /* line 21, ../sass/_techcomp.scss */
   .techcomp .container {
     overflow: hidden;
   }
-  /* line 5, ../sass/_techcomp.scss */
+  /* line 23, ../sass/_techcomp.scss */
   .techcomp .container .tech {
     float: left;
     width: 30%;
+    padding-right: 50px;
   }
-  /* line 9, ../sass/_techcomp.scss */
+  /* line 28, ../sass/_techcomp.scss */
   .techcomp .container .comp {
     float: right;
     width: 70%;
+  }
+  /* line 31, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp {
+    overflow: hidden;
+  }
+  /* line 33, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp .webdesign, .techcomp .container .comp .inner-comp .dev {
+    width: 50%;
+    float: left;
+    padding-right: 25px;
+  }
+  /* line 37, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp .webdesign p, .techcomp .container .comp .inner-comp .dev p {
+    text-align: justify;
+    margin: 5px 0;
+  }
+  /* line 40, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp .webdesign p span, .techcomp .container .comp .inner-comp .dev p span {
+    font-weight: bold;
+  }
+  /* line 45, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp .projet, .techcomp .container .comp .inner-comp .divers {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-left: 25px;
+  }
+  /* line 50, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp .projet p, .techcomp .container .comp .inner-comp .divers p {
+    text-align: justify;
+    margin: 5px 0;
+  }
+  /* line 53, ../sass/_techcomp.scss */
+  .techcomp .container .comp .inner-comp .projet p span, .techcomp .container .comp .inner-comp .divers p span {
+    font-weight: bold;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -242,50 +337,76 @@ footer {
   box-shadow: 0 -2px 5px #555;
 }
 /* line 5, ../sass/_footer.scss */
-footer .copyright {
-  background: #588E95;
-  color: #fafafa;
+footer section {
+  text-align: center;
 }
-/* line 8, ../sass/_footer.scss */
-footer .copyright p {
+/* line 7, ../sass/_footer.scss */
+footer section h2 {
   text-align: center;
 }
 /* line 10, ../sass/_footer.scss */
-footer .copyright p a {
+footer section hr {
+  margin: 25px auto;
+}
+/* line 14, ../sass/_footer.scss */
+footer section article h3 {
+  color: #588E95;
+}
+/* line 18, ../sass/_footer.scss */
+footer section .tel, footer section .mail {
+  display: block;
+  margin: 10px 0;
+}
+/* line 22, ../sass/_footer.scss */
+footer section .tel::before, footer section .mail::before {
+  font-family: 'FontAwesome';
+  color: #588E95;
+  margin-right: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+/* line 29, ../sass/_footer.scss */
+footer section .tel::before {
+  content: '\f095';
+}
+/* line 32, ../sass/_footer.scss */
+footer section .mail::before {
+  content: '\f0e0';
+}
+/* line 36, ../sass/_footer.scss */
+footer .copyright {
+  background: #588E95;
   color: #0A1829;
+}
+/* line 39, ../sass/_footer.scss */
+footer .copyright p {
+  text-align: center;
+}
+/* line 41, ../sass/_footer.scss */
+footer .copyright p a {
+  color: #fafafa;
 }
 
 @media screen and (min-width: 1170px) {
-  /* line 18, ../sass/_footer.scss */
+  /* line 49, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 20, ../sass/_footer.scss */
+  /* line 51, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 22, ../sass/_footer.scss */
+  /* line 53, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
-  }
-  /* line 26, ../sass/_footer.scss */
-  footer .container section:first-child {
-    padding-right: 25px;
-  }
-  /* line 29, ../sass/_footer.scss */
-  footer .container section:nth-child(2) {
     padding: 0 25px;
   }
-  /* line 32, ../sass/_footer.scss */
-  footer .container section:last-child {
-    padding-left: 25px;
-  }
-  /* line 36, ../sass/_footer.scss */
+  /* line 59, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 38, ../sass/_footer.scss */
+  /* line 61, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 50px;
   }

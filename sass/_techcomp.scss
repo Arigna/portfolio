@@ -1,3 +1,21 @@
+.tech {
+    .inner-tech {
+        margin-top: 20px;
+        .fond-jauge {
+            width: 100%;
+            text-align: left;
+            border-radius: 10px 10px;
+            @include box-shadow(0 2px 5px $gris inset);
+            overflow: hidden;
+            .jauge {
+                background: $vert;
+                height: 100%;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1170px) {
     .techcomp {
         .container {
@@ -5,10 +23,39 @@
             .tech {
                 float: left;
                 width: 30%;
+                padding-right: 50px;
             }
             .comp {
                 float: right;
                 width: 70%;
+                .inner-comp {
+                    overflow: hidden;
+                    .webdesign, .dev {
+                        width: 50%;
+                        float: left;
+                        padding-right: 25px;
+                        p {
+                            text-align: justify;
+                            margin: 5px 0;
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .projet, .divers {
+                        width: 50%;
+                        float: right;
+                        text-align: right;
+                        padding-left: 25px;
+                        p {
+                            text-align: justify;
+                            margin: 5px 0;
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
