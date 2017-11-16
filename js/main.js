@@ -40,16 +40,18 @@ $(function(){ // Fonction attente chargement du DOM
 
 
     // Responsive :
-    $('header p').on('click', function(){
-        $('header nav').slideToggle(400);
-    });
+    if ( $('header nav').css('display') === 'none' ) {
+        $('header p').on('click', function(){
+            $('header nav').slideToggle(400);
+        });
 
-    // Refermer la nav via la commande stopPropagation :
-    $('header').on('click', function(event){
-        event.stopPropagation();
-    });
-    $('header nav li, html').on('click', function(){
-        $('header nav').slideUp(400);
-    });
+        // Refermer la nav via la commande stopPropagation :
+        $('header').on('click', function(event){
+            event.stopPropagation();
+        });
+        $('header nav li, html').on('click', function(){
+            $('header nav').slideUp(400);
+        });
+    };
 
 });
