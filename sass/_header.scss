@@ -162,3 +162,47 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        .container {
+            overflow: hidden;
+            padding: 10px 0;
+            position: relative;
+            h1 {
+                font-size: 20px;
+                text-align: left;
+            }
+            p {
+                font-size: 14px;
+                text-align: left;
+            }
+            p::before {
+                content: '\f0c9';
+                font-family: 'FontAwesome';
+                font-size: 35px;
+                color: $blanc;
+                position: absolute;
+                top: 24%;
+                right: 0;
+            }
+            img, cite {
+                display: none;
+            }
+        }
+        nav {
+            display: none;
+            ul {
+                text-align: center;
+                li {
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}

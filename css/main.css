@@ -125,6 +125,23 @@ time {
     margin: 10px 0;
   }
 }
+@media screen and (max-width: 767px) {
+  /* line 76, ../sass/_commun.scss */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* line 80, ../sass/_commun.scss */
+  .about, .profil, .formation, .techcomp, .comp, .exp {
+    padding: 60px 0;
+  }
+
+  /* line 83, ../sass/_commun.scss */
+  article {
+    margin: 20px 0;
+  }
+}
 /* line 1, ../sass/_header.scss */
 header {
   /*
@@ -320,6 +337,58 @@ header nav {
     opacity: 0.5;
   }
 }
+@media screen and (max-width: 767px) {
+  /* line 167, ../sass/_header.scss */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  /* line 173, ../sass/_header.scss */
+  header .container {
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+  }
+  /* line 177, ../sass/_header.scss */
+  header .container h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+  /* line 181, ../sass/_header.scss */
+  header .container p {
+    font-size: 14px;
+    text-align: left;
+  }
+  /* line 185, ../sass/_header.scss */
+  header .container p::before {
+    content: '\f0c9';
+    font-family: 'FontAwesome';
+    font-size: 35px;
+    color: #fafafa;
+    position: absolute;
+    top: 24%;
+    right: 0;
+  }
+  /* line 194, ../sass/_header.scss */
+  header .container img, header .container cite {
+    display: none;
+  }
+  /* line 198, ../sass/_header.scss */
+  header nav {
+    display: none;
+  }
+  /* line 200, ../sass/_header.scss */
+  header nav ul {
+    text-align: center;
+  }
+  /* line 202, ../sass/_header.scss */
+  header nav ul li {
+    line-height: 60px;
+  }
+}
 @media screen and (min-width: 1170px) {
   /* line 2, ../sass/_about.scss */
   .about {
@@ -352,6 +421,13 @@ header nav {
   /* line 27, ../sass/_about.scss */
   .about p {
     margin: 15px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 35, ../sass/_about.scss */
+  .about p {
+    margin: 15px 0;
+    text-align: justify;
   }
 }
 /* line 2, ../sass/_profil.scss */
@@ -449,6 +525,16 @@ header nav {
     -moz-box-shadow: 0 0 8px #555 inset;
     -webkit-box-shadow: 0 0 8px #555 inset;
     box-shadow: 0 0 8px #555 inset;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 79, ../sass/_profil.scss */
+  .profil {
+    text-align: center;
+  }
+  /* line 81, ../sass/_profil.scss */
+  .profil .btn {
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -640,6 +726,25 @@ header nav {
     margin: 15px 0;
   }
 }
+@media screen and (max-width: 767px) {
+  /* line 131, ../sass/_techcomp.scss */
+  .techcomp {
+    text-align: justify;
+  }
+  /* line 133, ../sass/_techcomp.scss */
+  .techcomp p {
+    text-align: justify;
+    margin: 5px 0;
+  }
+  /* line 136, ../sass/_techcomp.scss */
+  .techcomp p span {
+    font-weight: bold;
+  }
+  /* line 140, ../sass/_techcomp.scss */
+  .techcomp .projet, .techcomp .divers {
+    margin-top: 20px;
+  }
+}
 @media screen and (min-width: 1170px) {
   /* line 2, ../sass/_exp.scss */
   .exp {
@@ -680,8 +785,9 @@ footer section article h3 {
 footer section .tel, footer section .mail {
   display: block;
   margin: 10px 0;
+  cursor: pointer;
 }
-/* line 22, ../sass/_footer.scss */
+/* line 23, ../sass/_footer.scss */
 footer section .tel::before, footer section .mail::before {
   font-family: 'FontAwesome';
   color: #588E95;
@@ -689,15 +795,15 @@ footer section .tel::before, footer section .mail::before {
   font-size: 20px;
   vertical-align: middle;
 }
-/* line 29, ../sass/_footer.scss */
+/* line 30, ../sass/_footer.scss */
 footer section .tel::before {
   content: '\f095';
 }
-/* line 32, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 footer section .mail::before {
   content: '\f0e0';
 }
-/* line 37, ../sass/_footer.scss */
+/* line 38, ../sass/_footer.scss */
 footer .assets a::before {
   font-family: 'FontAwesome';
   color: #588E95;
@@ -705,109 +811,125 @@ footer .assets a::before {
   margin: 10px 5px;
   transition-duration: 0.5s;
 }
-/* line 44, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 footer .assets a:hover::before {
   color: #fafafa;
 }
-/* line 47, ../sass/_footer.scss */
+/* line 48, ../sass/_footer.scss */
 footer .assets a[title="Linkedin"]::before {
   content: '\f08c';
 }
-/* line 50, ../sass/_footer.scss */
+/* line 51, ../sass/_footer.scss */
 footer .assets a[title="Viadeo"]::before {
   content: '\f2aa';
 }
-/* line 53, ../sass/_footer.scss */
+/* line 54, ../sass/_footer.scss */
 footer .assets a[title="GitHub"]::before {
   content: '\f092';
 }
-/* line 56, ../sass/_footer.scss */
+/* line 57, ../sass/_footer.scss */
 footer .assets a[title="BitBucket"]::before {
   content: '\f172';
 }
-/* line 60, ../sass/_footer.scss */
+/* line 61, ../sass/_footer.scss */
 footer .copyright {
   background: #588E95;
   color: #0A1829;
 }
-/* line 63, ../sass/_footer.scss */
+/* line 64, ../sass/_footer.scss */
 footer .copyright p {
   text-align: center;
 }
-/* line 65, ../sass/_footer.scss */
+/* line 66, ../sass/_footer.scss */
 footer .copyright p a {
   color: #fafafa;
 }
 
 @media screen and (min-width: 1170px) {
-  /* line 73, ../sass/_footer.scss */
+  /* line 74, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 75, ../sass/_footer.scss */
+  /* line 76, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 77, ../sass/_footer.scss */
+  /* line 78, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 25px;
   }
-  /* line 83, ../sass/_footer.scss */
+  /* line 84, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 85, ../sass/_footer.scss */
+  /* line 86, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 50px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1169px) {
-  /* line 93, ../sass/_footer.scss */
+  /* line 94, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 95, ../sass/_footer.scss */
+  /* line 96, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 97, ../sass/_footer.scss */
+  /* line 98, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 20px;
   }
-  /* line 103, ../sass/_footer.scss */
+  /* line 104, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 105, ../sass/_footer.scss */
+  /* line 106, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 113, ../sass/_footer.scss */
+  /* line 114, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 115, ../sass/_footer.scss */
+  /* line 116, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 117, ../sass/_footer.scss */
+  /* line 118, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 20px;
   }
-  /* line 123, ../sass/_footer.scss */
+  /* line 124, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 125, ../sass/_footer.scss */
+  /* line 126, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 134, ../sass/_footer.scss */
+  footer {
+    padding-top: 25px;
+  }
+  /* line 136, ../sass/_footer.scss */
+  footer .contact, footer .assets {
+    margin-top: 25px;
+  }
+  /* line 139, ../sass/_footer.scss */
+  footer .copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    padding: 10px 0;
   }
 }

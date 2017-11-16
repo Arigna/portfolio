@@ -126,3 +126,19 @@
         margin: 15px 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .techcomp {
+        text-align: justify;
+        p {
+            text-align: justify;
+            margin: 5px 0;
+            span {
+                font-weight: bold;
+            }
+        }
+        .projet, .divers {
+            margin-top: 20px;
+        }
+    }
+}

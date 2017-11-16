@@ -73,5 +73,14 @@ time {
 }
 
 @media screen and (max-width: 767px) {
-    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about, .profil, .formation, .techcomp, .comp, .exp {
+        padding: 60px 0;
+    }
+    article {
+        margin: 20px 0;
+    }
 }
