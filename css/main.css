@@ -134,7 +134,7 @@ time {
 
   /* line 80, ../sass/_commun.scss */
   .about, .profil, .formation, .techcomp, .comp, .exp {
-    padding: 60px 0;
+    padding-top: 90px;
   }
 
   /* line 83, ../sass/_commun.scss */
@@ -741,7 +741,7 @@ header nav {
     font-weight: bold;
   }
   /* line 140, ../sass/_techcomp.scss */
-  .techcomp .projet, .techcomp .divers {
+  .techcomp .projet, .techcomp .divers, .techcomp .langues {
     margin-top: 20px;
   }
 }
@@ -755,6 +755,12 @@ header nav {
   /* line 8, ../sass/_exp.scss */
   .exp {
     background: url(../img/bg_exp.jpg) no-repeat right;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 14, ../sass/_exp.scss */
+  .exp {
+    padding-bottom: 50px;
   }
 }
 /* line 1, ../sass/_footer.scss */
@@ -920,7 +926,7 @@ footer .copyright p a {
 @media screen and (max-width: 767px) {
   /* line 134, ../sass/_footer.scss */
   footer {
-    padding-top: 25px;
+    padding-top: 40px;
   }
   /* line 136, ../sass/_footer.scss */
   footer .contact, footer .assets {
