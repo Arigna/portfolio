@@ -68,6 +68,14 @@ footer {
             }
         }
     }
+    .contact article {
+            h3 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
 }
 
 @media screen and (min-width: 1170px) {
@@ -86,6 +94,9 @@ footer {
             p {
                 line-height: 50px;
             }
+        }
+        .contact article {
+            margin: 38px 0 0 0;
         }
     }
 }
@@ -107,6 +118,9 @@ footer {
                 line-height: 40px;
             }
         }
+        .contact article {
+            margin: 27px 0 0 0;
+        }
     }
 }
 
@@ -127,6 +141,9 @@ footer {
                 line-height: 40px;
             }
         }
+        .contact article {
+            margin: 25px 0 0 0;
+        }
     }
 }
 
@@ -140,6 +157,9 @@ footer {
             margin-top: 25px;
             font-size: 14px;
             padding: 10px 0;
+        }
+        .contact article {
+            margin: 20px 0 0 0;
         }
     }
 }

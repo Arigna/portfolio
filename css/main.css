@@ -846,92 +846,116 @@ footer .copyright p {
 footer .copyright p a {
   color: #fafafa;
 }
+/* line 72, ../sass/_footer.scss */
+footer .contact article h3 {
+  font-size: 14px;
+}
+/* line 75, ../sass/_footer.scss */
+footer .contact article p {
+  font-size: 12px;
+}
 
 @media screen and (min-width: 1170px) {
-  /* line 74, ../sass/_footer.scss */
+  /* line 82, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 76, ../sass/_footer.scss */
+  /* line 84, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 78, ../sass/_footer.scss */
+  /* line 86, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 25px;
   }
-  /* line 84, ../sass/_footer.scss */
+  /* line 92, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 86, ../sass/_footer.scss */
+  /* line 94, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 50px;
   }
+  /* line 98, ../sass/_footer.scss */
+  footer .contact article {
+    margin: 38px 0 0 0;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1169px) {
-  /* line 94, ../sass/_footer.scss */
+  /* line 105, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 96, ../sass/_footer.scss */
+  /* line 107, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 98, ../sass/_footer.scss */
+  /* line 109, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 20px;
   }
-  /* line 104, ../sass/_footer.scss */
+  /* line 115, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 106, ../sass/_footer.scss */
+  /* line 117, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 40px;
+  }
+  /* line 121, ../sass/_footer.scss */
+  footer .contact article {
+    margin: 27px 0 0 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 114, ../sass/_footer.scss */
+  /* line 128, ../sass/_footer.scss */
   footer {
     padding-top: 50px;
   }
-  /* line 116, ../sass/_footer.scss */
+  /* line 130, ../sass/_footer.scss */
   footer .container {
     overflow: hidden;
   }
-  /* line 118, ../sass/_footer.scss */
+  /* line 132, ../sass/_footer.scss */
   footer .container section {
     float: left;
     width: 33.333333%;
     padding: 0 20px;
   }
-  /* line 124, ../sass/_footer.scss */
+  /* line 138, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
   }
-  /* line 126, ../sass/_footer.scss */
+  /* line 140, ../sass/_footer.scss */
   footer .copyright p {
     line-height: 40px;
   }
+  /* line 144, ../sass/_footer.scss */
+  footer .contact article {
+    margin: 25px 0 0 0;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 134, ../sass/_footer.scss */
+  /* line 151, ../sass/_footer.scss */
   footer {
     padding-top: 40px;
   }
-  /* line 136, ../sass/_footer.scss */
+  /* line 153, ../sass/_footer.scss */
   footer .contact, footer .assets {
     margin-top: 25px;
   }
-  /* line 139, ../sass/_footer.scss */
+  /* line 156, ../sass/_footer.scss */
   footer .copyright {
     margin-top: 25px;
     font-size: 14px;
     padding: 10px 0;
+  }
+  /* line 161, ../sass/_footer.scss */
+  footer .contact article {
+    margin: 20px 0 0 0;
   }
 }
